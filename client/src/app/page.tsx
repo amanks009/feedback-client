@@ -9,8 +9,8 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    if (user?.role === 'MANAGER') router.replace('/manager');
-    else if (user?.role === 'EMPLOYEE') router.replace('/employee');
+    if (user?.role === 'Manager') router.replace('/manager');
+    else if (user?.role === 'Employee') router.replace('/employee');
   }, [user, router]);
 
   return (
